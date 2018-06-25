@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div style="padding-top:5px; padding-left:30px; color:red"><a href="#">Aakash.S@oslosolutions.com</a></div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Add Job", "AddJob", "Home")</li>
+                    <li>@Html.ActionLink("All Positions", "AllPositions", "Home")</li>
+                    <li class="dropdown">
+                        @Html.ActionLink("Submissions", "Submissions", "Home")
+                        <ul class="dropdown-menu">
+                            <li>xx</li>
+                            <li>yy</li>
+                        </ul>
+                    </li>
+
+                    <li>@Html.ActionLink("Interview Schedules", "InterviewSchedules", "Home")</li>
+                    <li>@Html.ActionLink("Search and Reports", "SearchAndReports", "Home")</li>
+                    <li>@Html.ActionLink("Client Manager Details", "ClientManagerDetails", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer></footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
