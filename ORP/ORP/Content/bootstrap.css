@@ -4335,6 +4335,15 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 
+#navBar
+{
+    display: none;
+}
+
+#navBar ul:hover ul
+{
+    display: block;
+}
 @media (min-width: 768px) {
   .navbar-form {
     width: auto;
