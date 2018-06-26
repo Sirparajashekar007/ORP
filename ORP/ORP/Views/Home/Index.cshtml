@@ -7,8 +7,8 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/bootstrap.css")
     @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/canvasjs.min")
-    @Scripts.Render("~/bundles/jquery.canvasjs.min")
+    @Scripts.Render("~/Scripts/canvasjs.min")
+    @Scripts.Render("~/Scripts/jquery.canvasjs.min")
 </head>
 <body>
     <div class="jumbotron">
@@ -26,7 +26,7 @@
                     //Better to construct options first and then pass it as a parameter
                     var options = {
                         title: {
-                            text: "Column Chart in jQuery CanvasJS"
+                            text: ""
                         },
                         data: [
                         {
@@ -56,5 +56,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/canvasjs.min")
+    @Scripts.Render("~/Scripts/jquery.canvasjs.min")
 </body>
 </html>
