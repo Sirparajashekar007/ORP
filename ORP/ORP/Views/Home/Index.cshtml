@@ -7,20 +7,54 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/bootstrap.css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/canvasjs.min")
+    @Scripts.Render("~/bundles/jquery.canvasjs.min")
 </head>
 <body>
-<div class="jumbotron">
+    <div class="jumbotron">
 
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <hr />
-        <p id="indexP"><b>Team Submissions Trend from Last 60 Days:</b></p>
     </div>
-    <div class="col-md-4">
+    <div class="row">
+        <div class="col-md-4">
+            <hr />
+            <p id="indexP"><b>Team Submissions Trend from Last 60 Days:</b></p>
+        </div>
+        <div class="col-md-4">
+            <script>
+                window.onload = function () {
+
+                    //Better to construct options first and then pass it as a parameter
+                    var options = {
+                        title: {
+                            text: "Column Chart in jQuery CanvasJS"
+                        },
+                        data: [
+                        {
+                            // Change type to "doughnut", "line", "splineArea", etc.
+                            type: "column",
+                            dataPoints: [
+                                { label: "apple", y: 10 },
+                                { label: "orange", y: 15 },
+                                { label: "banana", y: 25 },
+                                { label: "mango", y: 30 },
+                                { label: "grape", y: 28 }
+                            ]
+                        }
+                        ]
+                    };
+
+                    $("#chartContainer").CanvasJSChart(options);
+                }
+            </script>
+            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+            <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+            <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+        </div>
+        <div class="col-md-4">
+        </div>
     </div>
-    <div class="col-md-4">
-    </div>
-</div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
 </body>
 </html>
