@@ -11,14 +11,14 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div style="padding-top:5px; padding-left:30px; color:red"><a href="#">Aakash.S@oslosolutions.com</a></div>
-            <div class="navbar-collapse collapse">
+            <div id="navBar" class="navbar-collapse collapse" >
             <ul class="nav navbar-nav">
                 <li>@Html.ActionLink("Home", "Index", "Home")</li>
                 <li>@Html.ActionLink("Add Job", "AddJob", "Home")</li>
                 <li>@Html.ActionLink("All Positions", "AllPositions", "Home")</li>
                 <li>
                     @Html.ActionLink("Submissions", "Submissions", "Home")
-                    <ul id="navBar">
+                    <ul>
                         <li>@Html.ActionLink("Home", "Index", "Home")</li>
                         <li>@Html.ActionLink("Add Job", "AddJob", "Home")</li>
                         <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -41,5 +41,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    
 </body>
 </html>
