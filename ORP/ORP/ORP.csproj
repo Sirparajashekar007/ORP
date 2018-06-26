@@ -312,6 +312,19 @@
     <Content Include="Views\Home\InterviewSchedules.cshtml" />
     <Content Include="Views\Home\SearchAndReports.cshtml" />
     <Content Include="Views\Home\ClientManagerDetails.cshtml" />
+    <Content Include="Views\Home\AllInterviewSchedules.cshtml" />
+    <Content Include="Views\Home\OsloMicrosoftInterviewSchedules.cshtml" />
+    <Content Include="Views\Home\Zen3InterviewSchedules.cshtml" />
+    <Content Include="Views\Home\BooleanSearch.cshtml" />
+    <Content Include="Views\Home\Reports.cshtml" />
+    <Content Include="Views\Home\RecruitmentTools.cshtml" />
+    <Content Include="Views\Home\ClosedPositions.cshtml" />
+    <Content Include="Views\Home\AddClientManagerDetails.cshtml" />
+    <Content Include="Views\Home\ViewClientManagerDetails.cshtml" />
+    <Content Include="Views\Home\AllSubmissions.cshtml" />
+    <Content Include="Views\Home\MicrosoftAccountSubmissions.cshtml" />
+    <Content Include="Views\Home\MySubmissions.cshtml" />
+    <Content Include="Views\Home\NonMicrosoftSubmissions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

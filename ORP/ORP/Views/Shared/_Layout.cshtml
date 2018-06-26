@@ -11,24 +11,45 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div style="padding-top:5px; padding-left:30px; color:red"><a href="#">Aakash.S@oslosolutions.com</a></div>
-            <div id="navBar" class="navbar-collapse collapse" >
-            <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                <li>@Html.ActionLink("Add Job", "AddJob", "Home")</li>
-                <li>@Html.ActionLink("All Positions", "AllPositions", "Home")</li>
-                <li>
-                    @Html.ActionLink("Submissions", "Submissions", "Home")
-                    <ul>
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Add Job", "AddJob", "Home")</li>
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Add Job", "AddJob", "Home")</li>
-                    </ul>
-                </li>
-                <li>@Html.ActionLink("Interview Schedules", "InterviewSchedules", "Home")</li>
-                <li>@Html.ActionLink("Search and Reports", "SearchAndReports", "Home")</li>
-                <li>@Html.ActionLink("Client Manager Details", "ClientManagerDetails", "Home")</li>
-            </ul>
+            <div id="navBar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Add Job", "AddJob", "Home")</li>
+                    <li>@Html.ActionLink("All Positions", "AllPositions", "Home")</li>
+                    <li>
+                        @Html.ActionLink("Submissions", "Submissions", "Home")
+                        <ul>
+                            <li>@Html.ActionLink("AllSubmissions", "AllSubmissions", "Home")</li>
+                            <li>@Html.ActionLink("Microsoft Account Submissions", "MicrosoftAccountSubmissions", "Home")</li>
+                            <li>@Html.ActionLink("My Submissions", "MySubmissions", "Home")</li>
+                            <li>@Html.ActionLink("Non Microsoft Submissions", "NonMicrosoftSubmissions", "Home")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        @Html.ActionLink("Interview Schedules", "InterviewSchedules", "Home")
+                        <ul>
+                            <li>@Html.ActionLink("All Interview Schedules", "AllInterviewSchedules", "Home")</li>
+                            <li>@Html.ActionLink("Oslo Microsoft Interview Schedules", "OsloMicrosoftInterviewSchedules", "Home")</li>
+                            <li>@Html.ActionLink("Zen3 Interview Schedules", "Zen3InterviewSchedules", "Home")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        @Html.ActionLink("Search and Reports", "SearchAndReports", "Home")
+                        <ul>
+                            <li>@Html.ActionLink("Boolean Search", "BooleanSearch", "Home")</li>
+                            <li>@Html.ActionLink("Reports", "Reports", "Home")</li>
+                            <li>@Html.ActionLink("Recruitment tools", "RecruitmentTools", "Home")</li>
+                            <li>@Html.ActionLink("Closed Positions", "ClosedPositions", "Home")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        @Html.ActionLink("Client Manager Details", "ClientManagerDetails", "Home")
+                        <ul>
+                            <li>@Html.ActionLink("Add Client Manager Details", "AddClientManagerDetails", "Home")</li>
+                            <li>@Html.ActionLink("View Client Manager Details", "ViewClientManagerDetails", "Home")</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -41,6 +62,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-    
+
 </body>
 </html>

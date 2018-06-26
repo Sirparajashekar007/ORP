@@ -36,6 +36,34 @@ namespace ORP.Controllers
             return View();
         }
 
+        public ActionResult AllSubmissions()
+        {
+            ViewBag.Title = "AllSubmissions Page";
+
+            return View();
+        }
+
+        public ActionResult MicrosoftAccountSubmissions()
+        {
+            ViewBag.Title = "MicrosoftAccountSubmissions Page";
+
+            return View();
+        }
+
+        public ActionResult MySubmissions()
+        {
+            ViewBag.Title = "MySubmissions Page";
+
+            return View();
+        }
+
+        public ActionResult NonMicrosoftSubmissions()
+        {
+            ViewBag.Title = "NonMicrosoftSubmissions Page";
+
+            return View();
+        }
+
         public ActionResult InterviewSchedules()
         {
             ViewBag.Title = "InterviewSchedules Page";
@@ -53,6 +81,69 @@ namespace ORP.Controllers
         public ActionResult ClientManagerDetails()
         {
             ViewBag.Title = "ClientManagerDetails Page";
+
+            return View();
+        }
+
+        public ActionResult AllInterviewSchedules()
+        {
+            ViewBag.Title = "AllInterviewSchedules Page";
+
+            return View();
+        }
+
+        public ActionResult OsloMicrosoftInterviewSchedules()
+        {
+            ViewBag.Title = "OsloMicrosoftInterviewSchedules Page";
+
+            return View();
+        }
+
+        public ActionResult Zen3InterviewSchedules()
+        {
+            ViewBag.Title = "Zen3InterviewSchedules Page";
+
+            return View();
+        }
+
+        public ActionResult BooleanSearch()
+        {
+            ViewBag.Title = "BooleanSearch Page";
+
+            return View();
+        }
+
+        public ActionResult Reports()
+        {
+            ViewBag.Title = "Reports Page";
+
+            return View();
+        }
+
+        public ActionResult RecruitmentTools()
+        {
+            ViewBag.Title = "RecruitmentTools Page";
+
+            return View();
+        }
+
+        public ActionResult ClosedPositions()
+        {
+            ViewBag.Title = "ClosedPositions Page";
+
+            return View();
+        }
+
+        public ActionResult AddClientManagerDetails()
+        {
+            ViewBag.Title = "AddClientManagerDetails Page";
+
+            return View();
+        }
+
+        public ActionResult ViewClientManagerDetails()
+        {
+            ViewBag.Title = "ViewClientManagerDetails Page";
 
             return View();
         }
